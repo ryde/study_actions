@@ -8,3 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World! by ryde."
+      - run: echo "Hello World! by ryde. one more."
+      - run: cat /etc/os-release

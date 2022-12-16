@@ -13,7 +13,6 @@ jobs:
       - run: cat /etc/os-release
       # - uses: actions/checkout@v1
       # - run: cat sample.txt
-    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:

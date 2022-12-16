@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World! by ryde."
-      - run: echo "Hello World! by ryde. one more."
       - run: cat /etc/os-release
       # - uses: actions/checkout@v1
       # - run: cat sample.txt
@@ -18,4 +17,9 @@ jobs:
         with:
           python-version: '3.10'
           check-latest: true
+      - run: python -m venv venv
+      - run: source ./venv/bin/activate
+      - run: pip install -U pip
+      - run: pip install -U setuptools
+      - run: pip install sphinx pytest
       - run: python --version

@@ -11,3 +11,5 @@ jobs:
       - run: echo "Hello World! by ryde."
       - run: echo "Hello World! by ryde. one more."
       - run: cat /etc/os-release
+      - uses: actions/checkout@v1
+      - run: cat sample.txt

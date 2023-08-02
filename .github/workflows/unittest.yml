@@ -2,7 +2,7 @@ name: Hello World
 
 on: 
   push:
-    branches: [ python_version_up-feature ]
+    branches: [ new-feature ]
 
 jobs:
   say_hello:

@@ -2,7 +2,7 @@ name: Hello World
 
 on: 
   push:
-    branches: [ main ]
+    branches: [ python_version_up-feature ]
 
 jobs:
   say_hello:
@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
           check-latest: true
       - run: python -m venv venv
       - run: source ./venv/bin/activate
